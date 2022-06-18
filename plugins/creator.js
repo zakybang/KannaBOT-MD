@@ -7,31 +7,39 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //------- NOMOR
   let nowner = `${nomorown.split`@`[0]}@s.whatsapp.net`
   let teksnomor = `${htki} *OWNER* ${htka}
-✦ @${nomorown.split`@`[0]} ✦
+• @${nomorown.split`@`[0]} •
 ------- ${nameown} -------
 
 📮 *Note:*
 • Owner tidak menerima save contact
 • Owner berhak blockir tanpa alasan
 • Berbicaralah yang sopan & tidak spam
-• Owner Hanya merespon yang berkaitan dengan BOT
+• Owner Hanya merespon yang apa ada bug di bot
 • No Telp`
 
 //------------ BIO
-let ppown = 'https://telegra.ph/file/02a2903c1e25228285740.jpg'
+let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} *BIODATA* ${htka}
-❑ *Nama* :Bara
-❑ *Umur* :13 Tahun
-❑ *Kelas* :1 Smp
+*ɴᴀᴍᴇ:* zaky
+*ᴀɢᴇ:* 17ᵗʰ
+*ᴄʟᴀss:* 1sma
+*sᴛᴀᴛᴜs:* single 
 
-❑ *Ulang Tahun* :18 Okto 2008
-❑ *Alamat* : Indonesia,Jawa Barat, Bandung
+*ʙɪʀᴛʜᴅᴀʏ:* 2 Ags 2005
+*ᴀᴅᴅʀᴇss:* Indonesia, Pekanbaru, Kotatengah
 
-${htjava} *Instagram:* ${sig}
-${htjava} *Github:* ${sgh}
-•·––––––––––––––––––––––––––·•
+*- - sᴋɪʟʟs: - -* 
+> JavaScript [89.7%]
+> Python [80.4%]
+> CSS [98.1%]
+> Html [66.2%]
+
+📷 *Instagram:* ${sig}
+🐈 *Github:* ${sgh}
+🥏 *Whatsapp* wa.me/${nomorown}
+
 `
-  let teks = 'P - Pilih dibawah kak'
+  let teks = ' '
 const sections = [
    {
 	title: `${htjava} OWNER –––––––––·•`,
@@ -43,8 +51,9 @@ const sections = [
     },{
 	title: `${htjava} SUPPORT ME –––––––·•`,
 	rows: [
-	    {title: "💹 • Donasi", rowId: ".donasi"},
+	    {title: "💹 • Donasi", rowId: ".owner nomor"},
 	{title: "🔖 • Sewa", rowId: ".sewa"},
+	{title: "🌟 • Buy Premium", rowId: ".premium"},
 	]
   },
 ]
@@ -65,13 +74,13 @@ const listMessage = {
           conn.reply(m.chat, teksnomor, m, { contextInfo: { mentionedJid: [nowner] }})
             break
             case 'bio':
-          conn.sendHydrated(m.chat, teksbio, wm, ppown, sig, "📷 Instagram", nomorown, '🌹 Nomor', [[null, null], [null, null],[null,null]], m)
+          conn.sendHydrated(m.chat, teksbio, wm, ppown, "wa.me/" + nomorown, "💬 ᴄʜᴀᴛs", null,null, [["ᴅᴏɴᴀsɪ", '.donasi'], [null, null],[null,null]], m)
             break
             
           default:
-            return await conn.sendMessage(m.chat, listMessage, m, { contextInfo: { mentionedJid: [m.sender] }})
+            return await conn.sendMessage(m.chat, listMessage, { quoted: m, contextInfo: { mentionedJid: [m.sender] }})
         }
-    } else if (/enchant|enchan/i.test(command)) {
+    } else if (/aoaooaoaooaoa/i.test(command)) {
       const count = args[2] && args[2].length > 0 ? Math.min(99999999, Math.max(parseInt(args[2]), 1)) : !args[2] || args.length < 4 ? 1 :Math.min(1, count)
       switch (_type) {
         case 't':
