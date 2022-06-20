@@ -14,6 +14,7 @@ handler.help = ['promote @tag']
 handler.tags = ['group']
 handler.command = /^(promote)$/i
 
+handler.owner = true
 handler.admin = true
 handler.group = true
 handler.botAdmin = true

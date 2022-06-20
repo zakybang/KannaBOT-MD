@@ -7,6 +7,6 @@ handler.help = ['leavegc', 'out']
 handler.tags = ['owner']
 handler.command = /^(out|leavegc)$/i
 
-handler.rowner = true
+handler.owner = true
 
 export default handler

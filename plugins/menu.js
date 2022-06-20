@@ -280,7 +280,7 @@ ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `
 const listMessage = {
   text: tek,
-  footer: '📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner',
+  footer: '📮 *Note:* Jangan Di Spam Kontol Gw Cape Pantek Ntar Kena Bug',
   mentions: await conn.parseMention(tek),
   title: `${htki} *LIST MENU* ${htka}`,
   buttonText: `CLICK HERE ⎙`,
@@ -498,7 +498,7 @@ const listMessage = {
                 },
                 {
                     urlButton: {
-                        displayText: 'Group Official',
+                        displayText: 'Instagram📷',
                         url: sgc
                     }
                 },
