@@ -43,7 +43,7 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 global.sig = "https://www.instagram.com/p/Ce_eybEp43J/?igshid=YmMyMTA2M2Y="
 global.sgh = 'https://github.com/zakybot'
-global.sgc = 'https://chat.whatsapp.com/FIM3MYBxvioJ8NtlJcTUoT'
+global.sgc = 'https://www.instagram.com/p/Ce_eybEp43J/?igshid=YmMyMTA2M2Y='
 global.sdc = 'https://youtube.com/channel/UCgnsm5vkY2wlRJnpD9I-7SQ'
 global.snh = 'https://nhentai.net/g/365296/'
 
