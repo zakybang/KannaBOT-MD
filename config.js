@@ -41,7 +41,7 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
     
 
 /*============== SOCIAL ==============*/
-global.sig = "https://instagram.com/ppiowy"
+global.sig = "https://www.instagram.com/p/Ce_eybEp43J/?igshid=YmMyMTA2M2Y="
 global.sgh = 'https://github.com/zakybot'
 global.sgc = 'https://chat.whatsapp.com/FIM3MYBxvioJ8NtlJcTUoT'
 global.sdc = 'https://youtube.com/channel/UCgnsm5vkY2wlRJnpD9I-7SQ'
@@ -58,7 +58,7 @@ global.psaweria = 'https://saweria.co/ZakYGZ'
 /*============== NOMOR ==============*/
 global.nomorbot = '6281269883200'
 global.nomorown = '6281365255567'
-global.namebot = 'ΣZakYBoT-MD⊰⊹ฺ'
+global.namebot = 'あ⁩ZakYB⛶T-MD⫹⫺'
 global.nameown = 'ZakYGanS'
 
 
@@ -66,8 +66,8 @@ global.nameown = 'ZakYGanS'
 global.owner = [
   ['6281365255567'],
   ['6281365255567'],
-  ['+1 (762) 675-1836'],
-  ['+1 (762) 675-1836', 'ZakYGanS', true]
+  ['6281365255567'],
+  ['6281365255567', 'ZakYGanS', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -112,20 +112,20 @@ global.APIKeys = { // APIKey Here
 
 
 /*============== WATERMARK ==============*/
-global.wm = 'ΣZakYBoT-MD⊰⊹ฺ' //Main Watermark
+global.wm = 'あ⁩ZakYB⛶T-MD⫹⫺' //Main Watermark
 global.wm2 = '¸„٭⊹•~⍣°”ˆ˜¨ZakYBoT-MD¨˜ˆ”°⍣~•⊹٭„¸'
-global.wm3 = '☘︎ zakyʙᴏᴛ-MD'
-global.botdate = `☘︎ 𝗗𝗮𝘁𝗲: ${week} ${date}\n☘︎ 𝗧𝗶𝗺𝗲: ${wktuwib}`
-global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = `ΣZakYBoT-MD⊰⊹ฺ| By ${global.nameown}`
+global.wm3 = '⫹⫺ zakybot-MD'
+global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
+global.bottime = `あ⁩Jam : ${wktuwib}`
+global.titlebot = `あ⁩ZakYB⛶T-MD⫹⫺⊹ฺ| By ${global.nameown}`
 global.author = '┄┄┄┅┅❑ zaky ❑┅┅┄┄┄'
 
 
 /*============== LOGO ==============*/
-global.thumb = 'https://telegra.ph/file/6048ec3e029520424c234.jpg' //Main Thumbnail
-global.imagebot = 'https://telegra.ph/file/6048ec3e029520424c234.jpg'
-global.giflogo = 'https://telegra.ph/file/6048ec3e029520424c234.jpg'
-global.thumbs = ['https://telegra.ph/file/6048ec3e029520424c234.jpg', 'https://telegra.ph/file/6048ec3e029520424c234.jpg', 'https://telegra.ph/file/6048ec3e029520424c234.jpg','https://telegra.ph/file/6048ec3e029520424c234.jpg']
+global.thumb = 'https://telegra.ph/file/c73f47b440241b66cb9d3.jpg' //Main Thumbnail
+global.imagebot = 'https://telegra.ph/file/793b6accf3758f092742a.jpg'
+global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
+global.thumbs = ['https://telegra.ph/file/5a882b8558fd1d2bd03fa.jpg', 'https://telegra.ph/file/f87047ec6e5f0d4a9ea91.jpg', 'https://telegra.ph/file/88edbb01051b397574def.jpg','https://telegra.ph/file/7957630a57078c5ec0400.jpg']
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
 /*============== HENTAI ==============*/ //Ini cuma simpenan owner kanna kok :v
@@ -150,7 +150,7 @@ global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.shee
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/6048ec3e029520424c234.jpg'
+global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = '99999999999999' // default 10TB
@@ -159,23 +159,23 @@ global.fpagedoc = '999'
 /*=========== HIASAN ===========*/
 // DEFAULT MENU
 global.dmenut = '❏═┅═━–〈' //top
-global.dmenub = '┊•' //body
+global.dmenub = '┊›' //body
 global.dmenub2 = '┊' //body for info cmd on Default menu
 global.dmenuf = '┗––––––––––✦' //footer
 
 // COMMAND MENU
 global.cmenut = '❏––––––『' //top
 global.cmenuh = '』––––––' //header
-global.cmenub = '┊☃︎ ' //body
+global.cmenub = '┊あ⁩ ' //body
 global.cmenuf = '┗━═┅═━––––––๑\n' //footer
 global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
-global.pmenus = '☃︎' //pembatas menu selector
+global.pmenus = '⛶' //pembatas menu selector
 
 global.htki = '––––––『' //hiasan title kiri
 global.htka = '』––––––' //hiasan title kanan
 global.lopr = 'Ⓟ'
 global.lolm = 'Ⓛ'
-global.htjava = '☘︎' //hiasan Doang :v
+global.htjava = '⫹⫺' //hiasan Doang :v
 
 /*============== STICKER WM ==============*/
 global.stickpack = '.'
