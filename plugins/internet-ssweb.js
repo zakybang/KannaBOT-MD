@@ -1,12 +1,17 @@
 import fetch from 'node-fetch'
-  import axios from 'axios'
-let handler = async(m, { conn, usedPrefix, command, args }) => {
-  
-  let res = await(await fetch(`https://hardianto.xyz/api/tools/ssweb?url=${args[0]}&apikey=hardianto`)).buffer()
-  if(!args[0]) throw `Linknya mana?`
-conn.sendHydrated(m.chat, `*「 Screenshot Web 」*\n\n*💻 Url:* ${args[0]}`, null, res, `${args[0]}`, '🌎 U R L', null, null, [[null,null],[null,null],[null,null]], m)
+
+let handler = async (m, { conn, command, args }) => {
+	if (!args[0]) throw 'Input URL'
+	await m.reply('_In progress, please wait..._')
+	let url = /https?:\/\//.test(args[0]) ? args[0] : 'https://' + args[0],
+		ss = /f$/i.test(command) ? API('nrtm', '/api/ssweb', { delay: 1000, url, full: true }) : API('nrtm', '/api/ssweb', { delay: 1000, url }),
+		res = await fetch(ss)
+	if (!res.ok) throw await res.text()
+	conn.sendMessage(m.chat, { image: { url: ss }, caption: url }, { quoted: m })
 }
-handler.help = ['ssweb']
-handler.tags = ['internet']
-handler.command = /^ss(web)?|scre?e?nshu?o?t$/i
+handler.help = ['ss', 'ssf']
+handler.tags = ['tools']
+handler.alias = ['ss', 'ssf', 'ssweb', 'sswebf']
+handler.command = /^ss(web)?f?$/i
+
 export default handler
