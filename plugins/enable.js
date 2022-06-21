@@ -1,4 +1,6 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
+let fdoc = {quoted:{key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `${command}`}}}}
+
 	const sections = [
    {
 	title: `${dmenub} List Options`,
@@ -7,16 +9,25 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 	    {title: "🚫 | Delete", rowId: `${usedPrefix + command} delete`},
 	    {title: "🌎 | Public", rowId: `${usedPrefix + command} public`},
 	{title: "🗣️ | Simi", rowId: `${usedPrefix + command} simi`},
-	{title: "🔗 | Antilink", rowId: `${usedPrefix + command} antilink`},
-	{title: "🚫 | Antidelete", rowId: `${usedPrefix + command} antidelete`},
-	{title: "🔞 | Antitoxic", rowId: `${usedPrefix + command} antitoxic`},
-	{title: "⏏️ | Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
+	{title: "🔗 | AntiLinkWa", rowId: `${usedPrefix + command} antilink`},
+	{title: "🔗 | AntiLinkTik", rowId: `${usedPrefix + command} antilinktik`},
+	{title: "🔗 | AntiLinkYt", rowId: `${usedPrefix + command} antilinkyt`},
+	{title: "🔗 | AntiLinkTel", rowId: `${usedPrefix + command} antilinktel`},
+	{title: "🔗 | AntiLinkFb", rowId: `${usedPrefix + command} antilinkfb`},
+	{title: "🔗 | AntiLinkIg", rowId: `${usedPrefix + command} antilinkig`},
+	{title: "🚫 | AntiDelete", rowId: `${usedPrefix + command} antidelete`},
+	{title: "👽 | AntiVirtex", rowId: `${usedPrefix + command} antivirtex`},
+	{title: "🤬 | AntiToxic", rowId: `${usedPrefix + command} antitoxic`},
+	{title: "🗿 | AntiSatir", rowId: `${usedPrefix + command} antisatir`},
+	{title: "⏏️ | AutoLevelup", rowId: `${usedPrefix + command} autolevelup`},
+	{title: "🎙️️ | AutoVn", rowId: `${usedPrefix + command} autovn`},
+	{title: "📷 | AutoSticker", rowId: `${usedPrefix + command} autosticker`},
 	{title: "🔎 | Detect", rowId: `${usedPrefix + command} detect`},
 	{title: "📑 | Document", rowId: `${usedPrefix + command} document`},
 	{title: "👤 | WhiteListMyContact", rowId: `${usedPrefix + command} whitelistmycontact`},
 	{title: "❗ | Restrict", rowId: `${usedPrefix + command} restrick`},
 	{title: "😐 | Nyimak", rowId: `${usedPrefix + command} nyimak`},
-	{title: "☑️ | Autoread", rowId: `${usedPrefix + command} autoread`},
+	{title: "☑️ | AutoRead", rowId: `${usedPrefix + command} autoread`},
 	{title: "💬 | PcOnly", rowId: `${usedPrefix + command} pconly`},
 	{title: "🏢 | GcOnly", rowId: `${usedPrefix + command} gconly`},
 	{title: "📷 | SwOnly", rowId: `${usedPrefix + command} swonly`},
@@ -81,18 +92,18 @@ const listMessage = {
       }
       chat.delete = !isEnable
       break
-    // case 'autodelvn':
-    //   if (m.isGroup) {
-    //     if (!(isAdmin || isOwner)) {
-    //       global.dfail('admin', m, conn)
-    //       throw false
-    //     }
-    //   }
-    //   chat.autodelvn = isEnable
-    //   break
-    // case 'document':
-    //   chat.useDocument = isEnable
-    //   break
+     case 'autodelvn':
+       if (m.isGroup) {
+         if (!(isAdmin || isOwner)) {
+           global.dfail('admin', m, conn)
+           throw false
+         }
+       }
+       chat.autodelvn = isEnable
+       break
+     case 'document':
+       chat.useDocument = isEnable
+       break
     case 'public':
       isAll = true
       if (!isROwner) {
@@ -110,6 +121,69 @@ const listMessage = {
       }
       chat.antiLink = isEnable
       break
+      case 'antilinktik':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiLinkTik = isEnable
+      break
+      case 'antilinkyt':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiLinkYt = isEnable
+      break
+      case 'antilinktel':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiLinkTel = isEnable
+      break
+      case 'antilinkfb':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiLinkFb = isEnable
+      break
+      case 'antilinkig':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiLinkIg = isEnable
+      break
+      case 'antivirtex':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiVirtex = isEnable
+      break
+      case 'antisatir':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiSatir = isEnable
+      break
       case 'simi':
         if (!isROwner) {
           global.dfail('rowner', m, conn)
@@ -117,40 +191,54 @@ const listMessage = {
         }
       chat.simi = isEnable
       break
-    // case 'toxic':
-    //   if (m.isGroup) {
-    //     if (!(isAdmin || isOwner)) {
-    //       global.dfail('admin', m, conn)
-    //       throw false
-    //     }
-    //   }
-    //   chat.antiToxic = !isEnable
-    //   break
-    // case 'antitoxic':
-    //   if (m.isGroup) {
-    //     if (!(isAdmin || isOwner)) {
-    //       global.dfail('admin', m, conn)
-    //       throw false
-    //     }
-    //   }
-    //   chat.antiToxic = isEnable
-    //   break
-    // case 'autolevelup':
-    //   isUser = true
-    //   user.autolevelup = isEnable
-    //   break
-    // case 'mycontact':
-    // case 'mycontacts':
-    // case 'whitelistcontact':
-    // case 'whitelistcontacts':
-    // case 'whitelistmycontact':
-    // case 'whitelistmycontacts':
-    //   if (!isOwner) {
-    //     global.dfail('owner', m, conn)
-    //     throw false
-    //   }
-    //   conn.callWhitelistMode = isEnable
-    //   break
+      case 'autovn':
+        if (!isROwner) {
+          global.dfail('rowner', m, conn)
+          throw false
+        }
+      chat.autoVn = isEnable
+      break
+      case 'autosticker':
+        if (!isROwner) {
+          global.dfail('rowner', m, conn)
+          throw false
+        }
+      chat.autoSticker = isEnable
+      break
+     case 'toxic':
+       if (m.isGroup) {
+         if (!(isAdmin || isOwner)) {
+           global.dfail('admin', m, conn)
+           throw false
+         }
+       }
+       chat.antiToxic = !isEnable
+       break
+     case 'antitoxic':
+       if (m.isGroup) {
+         if (!(isAdmin || isOwner)) {
+           global.dfail('admin', m, conn)
+           throw false
+         }
+       }
+       chat.antiToxic = isEnable
+       break
+     case 'autolevelup':
+       isUser = true
+       user.autolevelup = isEnable
+       break
+     case 'mycontact':
+     case 'mycontacts':
+     case 'whitelistcontact':
+     case 'whitelistcontacts':
+     case 'whitelistmycontact':
+     case 'whitelistmycontacts':
+       if (!isOwner) {
+         global.dfail('owner', m, conn)
+         throw false
+       }
+       conn.callWhitelistMode = isEnable
+       break
     case 'restrict':
       isAll = true
       if (!isOwner) {
@@ -203,7 +291,7 @@ const listMessage = {
       global.opts['swonly'] = isEnable
       break
     default:
-      if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)
+      if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, fdoc)
       throw false
   }
   conn.sendButton(m.chat, `*${htki} OPTIONS ${htka}*
@@ -211,7 +299,7 @@ const listMessage = {
 📊 *Status:* Succes ✅
 🎚️ *Options:* ${isEnable ? 'Enable' : 'Disable'}
 📣 *For:* ${isAll ? 'This Bot' : isUser ? '' : 'This Chats'}
-`,wm, null, [[`${isEnable ? '✖️ Disable' : '✔️ Enable'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['🎀 Menu', '.menu']],m)
+`,wm, null, [[`${isEnable ? '✖️ Disable' : '✔️ Enable'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['🎀 Menu', '.menu']],m, fdoc)
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']

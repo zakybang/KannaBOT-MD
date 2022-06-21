@@ -1,3 +1,4 @@
+/**
 import { canLevelUp } from '../lib/levelling.js'
 export function before(m) {
     let user = global.db.data.users[m.sender]
@@ -15,4 +16,4 @@ gunakan *.profile* untuk mengecek
 	`.trim())
     }
 }
-export const disabled = true
+**/
